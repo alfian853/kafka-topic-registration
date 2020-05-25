@@ -12,7 +12,7 @@
     <artifactId>kafka-topic-configuration</artifactId>
     <version>0.4.4-SNAPSHOT</version>
     <name>kafka-topic-configuration</name>
-    <description>Demo project for Spring Boot</description>
+    <description>Register to Topic Manager service automatically</description>
     <packaging>jar</packaging>
 
     <properties>
@@ -80,5 +80,18 @@
         </dependencies>
     </dependencyManagement>
 
-
+    <scm>
+        <connection>scm:git:git@github.com:alfian853/kafka-topic-configuration.git
+        </connection>
+        <developerConnection>
+            scm:git:git@github.com:alfian853/kafka-topic-configuration.git
+        </developerConnection>
+    </scm>
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Alfian853 Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/alfian853/kafka-topic-configuration</url>
+        </repository>
+    </distributionManagement>
 </project>
