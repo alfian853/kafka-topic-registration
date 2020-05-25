@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.2.6.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath /> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.alfian</groupId>
     <artifactId>kafka-topic-configuration</artifactId>
-    <version>0.4.4-SNAPSHOT</version>
+    <version>0.4.4</version>
     <name>kafka-topic-configuration</name>
     <description>Register to Topic Manager service automatically</description>
     <packaging>jar</packaging>
@@ -25,10 +24,6 @@
             <artifactId>spring-boot-starter</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
-        </dependency>
-        <dependency>
             <groupId>org.springframework.kafka</groupId>
             <artifactId>spring-kafka</artifactId>
         </dependency>
@@ -39,10 +34,6 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.alfian</groupId>
-            <artifactId>alfian-kafka-plugin</artifactId>
         </dependency>
         <dependency>
             <groupId>com.netflix.feign</groupId>
@@ -66,12 +57,6 @@
                 <scope>provided</scope>
             </dependency>
             <dependency>
-                <groupId>com.alfian</groupId>
-                <artifactId>alfian-kafka-plugin</artifactId>
-                <version>0.0.1-SNAPSHOT</version>
-            </dependency>
-
-            <dependency>
                 <groupId>com.netflix.feign</groupId>
                 <artifactId>feign-jackson</artifactId>
                 <version>8.18.0</version>
@@ -86,7 +71,8 @@
         <developerConnection>
             scm:git:git@github.com:alfian853/kafka-topic-configuration.git
         </developerConnection>
-    </scm>
+      <tag>kafka-topic-configuration-0.4.4</tag>
+  </scm>
     <distributionManagement>
         <repository>
             <id>github</id>
