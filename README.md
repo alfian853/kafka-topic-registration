@@ -30,7 +30,7 @@ public class FooTopics {
   String fooTopic5 = "foo-5";
 }
 ```
-Notes: use ``public`` modifier
+Note: use ``public`` modifier
 
 ### 2. Register Published topic
 
