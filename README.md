@@ -3,6 +3,16 @@
 This project help to register kafka topics to 
 [Topic-Manager](https://github.com/alfian853/topic-manager) server automatically
 
+## Installation
+If you are new in github maven package, please read this: 
+[Configuring Apache Maven for use with GitHub Packages](https://help.github.com/en/packages/using-github-packages-with-your-projects-ecosystem/configuring-apache-maven-for-use-with-github-packages)
+```
+<dependency>
+  <groupId>com.alfian</groupId>
+  <artifactId>kafka-topic-registration</artifactId>
+  <version>${version}</version>
+</dependency>
+```
 
 ## Usage
 
@@ -42,4 +52,3 @@ Use ``org.springframework.kafka.annotation.KafkaListener``
     //do something
   }
 ```
-
