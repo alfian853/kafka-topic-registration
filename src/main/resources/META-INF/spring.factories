@@ -1,1 +1,1 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.alfian.configuration.KafkaTopicManagerConfiguration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.alfian.configuration.kafka.topic.KafkaTopicManagerConfiguration

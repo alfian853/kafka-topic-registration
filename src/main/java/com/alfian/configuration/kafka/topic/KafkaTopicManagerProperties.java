@@ -14,4 +14,6 @@ public class KafkaTopicManagerProperties {
 
   private String url;
 
+  private String serviceName;
+
 }
