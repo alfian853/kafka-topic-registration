@@ -9,7 +9,7 @@
     </parent>
     <groupId>com.alfian</groupId>
     <artifactId>kafka-topic-registration</artifactId>
-    <version>0.4.6</version>
+    <version>0.4.7-SNAPSHOT</version>
     <name>kafka-topic-registration</name>
     <description>Register to Topic Manager service automatically</description>
     <packaging>jar</packaging>
@@ -71,7 +71,7 @@
         <developerConnection>
             scm:git:git@github.com:alfian853/kafka-topic-registration.git
         </developerConnection>
-      <tag>kafka-topic-registration-0.4.6</tag>
+      <tag>HEAD</tag>
   </scm>
     <distributionManagement>
         <repository>
