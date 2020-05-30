@@ -1,4 +1,4 @@
-# kafka-topic-configuration
+# kafka-topic-registration
 
 This project help to register kafka topics to 
 [Topic-Manager](https://github.com/alfian853/topic-manager) server automatically
