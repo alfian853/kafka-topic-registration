@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 @ConditionalOnProperty("plugin.kafka-topic-manager.service-name")
 @FeignClient(
   name = "${plugin.kafka-topic-manager.service-name}",
-  fallbackFactory = TopicManagerFeignFallbackFactory.class
+  fallbackFactory = TopicManagerServiceFeignFallbackFactory.class
 )
 public interface TopicManagerServiceFeign extends TopicManagerFeign{
 

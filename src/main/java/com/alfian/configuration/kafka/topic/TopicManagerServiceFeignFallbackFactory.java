@@ -8,11 +8,11 @@ import org.springframework.stereotype.Component;
 @Slf4j
 @Component
 @ConditionalOnProperty("plugin.kafka-topic-manager.service-name")
-public class TopicManagerFeignFallbackFactory implements FallbackFactory<TopicManagerFeign> {
+public class TopicManagerServiceFeignFallbackFactory implements FallbackFactory<TopicManagerFeign> {
 
   @Override
   public TopicManagerFeign create(Throwable cause) {
     log.error("Hystrix Error: {}", cause.getMessage());
-    return new TopicManagerFeignFallback();
+    return new TopicManagerServiceFeignFallback();
   }
 }
