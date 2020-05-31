@@ -17,7 +17,7 @@ If you are new in github maven package, please read this:
 ## Usage
 
 ### 1. Register published topic
-```
+```java
 import com.alfian.configuration.kafka.topic.KafkaTopic;
 import org.springframework.stereotype.Component;
 
@@ -46,9 +46,16 @@ Note: use ``public`` modifier
 
 Use ``org.springframework.kafka.annotation.KafkaListener``
 
-```
-@KafkaListener(topics = "foo-1")
+```java
+import org.springframework.kafka.annotation.KafkaListener;
+import org.springframework.stereotype.Component;
+
+@Component
+public class FooListener {
+
+  @KafkaListener(topics = "foo-1")
   public void listenFoo1(ConsumerRecord<String, String> record) {
     //do something
   }
+}
 ```
